@@ -4,7 +4,7 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
     outline: none;
-    
+
 }
 
 .conversor {
@@ -43,7 +43,8 @@ label {
     color: #BBB;
 }
 
-select, input {
+select,
+input {
     width: 100%;
     height: 40px;
     border-radius: 4px;
@@ -89,19 +90,23 @@ button:active {
     border-radius: 20px;
 }
 
-.moedaOriginal, .moedaConverter {
+.moedaOriginal,
+.moedaConverter {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
     padding: 16px 0;
 }
-.moedaOriginalIcon, .moedaConverterIcon {
+
+.moedaOriginalIcon,
+.moedaConverterIcon {
     width: 64px;
     height: 64px;
 }
 
-.valorOriginalContainer, .valorConverterContainer {
+.valorOriginalContainer,
+.valorConverterContainer {
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -110,11 +115,13 @@ button:active {
     color: #555555;
 }
 
-.moedaOriginalNome, .moedaConverterNome {
+.moedaOriginalNome,
+.moedaConverterNome {
     font-size: 16px;
     font-weight: 500;
     color: #555555;
 }
+
 .arrow {
     margin: 24px 0;
 }
