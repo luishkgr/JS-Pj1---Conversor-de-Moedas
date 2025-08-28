@@ -1,127 +1,118 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
     outline: none;
-
 }
 
-.conversor {
+body {
+    background: #2e6fe7;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: #2c5e8d;
-    gap: 30px;
+}
+
+.converter {
+    background: #f4f4f4;
+    border-radius: 20px;
+    padding: 44px 24px 23px;
+    width: 375px;
 }
 
 .logo {
+    width: 120px;
     display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
+    margin: 0 auto 20px;
 }
 
 .container {
-    display: block;
-    margin: 0 auto;
-    width: 375px;
-    padding: 44px 24px 23px;
-    border: none;
-    border-radius: 20px;
-    background-color: #f4f4f4;
-}
-
-form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    gap: 20px;
 }
 
 label {
     font-size: 14px;
-    margin-bottom: 2px;
-    color: #BBB;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 5px;
 }
 
-select,
+select, 
 input {
     width: 100%;
-    height: 40px;
-    border-radius: 4px;
-    border: 1px solid #BBB;
-    background: #FFF;
-    margin-bottom: 24px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
     appearance: none;
-    padding-left: 18px;
-    color: #555555;
-    font-weight: 700;
-    cursor: pointer;
+    
 }
 
-
-button {
-    width: 100%;
-    height: 40px;
+.convertButton {
+    background: #258dc9;
+    color: #fff;
     border: none;
-    border-radius: 4px;
-    background-color: #2c5e8d;
-    color: #FFF;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    margin-bottom: 24px;
-}
-
-button:hover {
-    opacity: 0.8;
-    transition: 0.3s;
-}
-
-button:active {
-    opacity: 0.6;
-}
-
-.resultado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid #2c5e8d;
-    border-radius: 20px;
-}
-
-.moedaOriginal,
-.moedaConverter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    padding: 16px 0;
-}
-
-.moedaOriginalIcon,
-.moedaConverterIcon {
-    width: 64px;
-    height: 64px;
-}
-
-.valorOriginalContainer,
-.valorConverterContainer {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 700;
-    gap: 4px;
-    color: #555555;
-}
-
-.moedaOriginalNome,
-.moedaConverterNome {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
     font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.convertButton:hover {
+    background: #2fc9bc;
+}
+
+.result {
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+    appearance: none;
+}
+
+.currencyFromBox,
+.currencyToBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.currencyFromIcon,
+.currencyToIcon {
+    width: 40px;
+    height: 40px;
+}
+
+.currencyFromName,
+.currencyToName {
+    font-size: 14px;
     font-weight: 500;
-    color: #555555;
+    color: #444;
+}
+
+.currencyFromValueBox,
+.currencyToValueBox {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
 }
 
 .arrow {
-    margin: 24px 0;
+    display: block;
+    margin: 15px auto;
+    width: 20px;
 }
